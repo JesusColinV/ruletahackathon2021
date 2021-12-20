@@ -1,0 +1,12 @@
+<div class="jumbotron text-center mt-4">
+  <button class="btn btn-success btn-lg" (click)="throwDice()"> Tirar Dados</button>
+  <br>
+  <img class="img" [src]="diceLeft" alt="dice1">
+  <img class="img" [src]="diceRight" alt="dice1">
+  <h1>
+    <span *ngIf='diceRight === diceLeft'  class="badge badge-succes">Actividad especial</span>
+  </h1>
+  <div><h2 class="text-info" >{{lista}}</h2></div>
+  <div><h2 class="text-warning mt-5" >{{lugar}}</h2></div>
+  <div><h2 class="text-warning" >{{razon}}</h2></div>
+</div>
